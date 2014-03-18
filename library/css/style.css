@@ -642,7 +642,30 @@ LAYOUT & GRID STYLES
 HEADER
 *********************/
 .header {
-  background: whitesmoke;
+  /*background: whitesmoke;*/
+	background-color:transparent;
+	width: calc(100% - 55px);
+	position:relative;
+	margin-left:55px;
+}
+
+.logo {
+	position:absolute;
+	top:5px;
+	left:-50px;
+}
+
+.logo img, .logo span {
+	float:left;
+}
+
+.logo span {
+	color: #FFFFFF;
+    display: inline-block;
+    font-family: helvetica;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0 0 15px;
 }
 
 #cb-inner-header {
@@ -4579,6 +4602,29 @@ html[xmlns] .slides {
   opacity: 1;
   cursor: default;
 }
+
+/* Following Section - homepage > under the slider - Start */
+
+.following-message {
+	display:table;
+	padding:35px 25px;
+	font-family:Helvetica;
+	font-size:22px;
+	line-height:130%;
+	color:#e6e6e6;
+	background-color:#091b27;
+	border-top:5px solid #ffffff;
+	border-bottom:5px solid #ffffff;
+	box-shadow:0 5px 0 #000000;
+	display:table;
+}
+
+.following-message p {
+	float:left;
+	margin:0 20px 0 0;
+}
+
+
 @media screen and (max-width: 860px) {
   .flexslider .flex-direction-nav .flex-prev {
     opacity: 1;
@@ -4961,6 +5007,21 @@ CSS ANIMATION STYLES
   from {
     width: 100%;
   }
+}
+
+@media (max-width: 481px){
+	.header {
+		width:100%;
+		margin-left:0;
+		position:static;
+	}
+}
+@media (max-width: 768px){
+	.header {
+		width:100%;
+		margin-left:0;
+		position:static;
+	}
 }
 
 @media only screen and (max-width: 481px) {
@@ -6324,6 +6385,7 @@ BLOG STYLE A
     width: 100%;
     float: left;
     padding: 0;
+    margin-left: -27.5px;
   }
   #cb-nav-bar #cb-main-menu .main-nav {
     border: 0;
@@ -6338,8 +6400,8 @@ BLOG STYLE A
     transition: background, 0.35s;
     display: inline-block;
     vertical-align: top;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 16px;
+    /*text-transform: uppercase;*/
     margin-right: -2px;
   }
   #cb-nav-bar #cb-main-menu .main-nav li > a {
@@ -6624,9 +6686,9 @@ BLOG STYLE A
     display: inline-block;
     color: #f7f7f7;
     font-weight: 700;
-    border-bottom: 3px solid transparent;
-    padding: 15px 0 10px 0;
-    margin: 0 0 15px 0;
+    /*border-bottom: 3px solid transparent;*/
+    padding: 10px 0;
+    margin: 0;
   }
   #cb-nav-bar #cb-main-menu .main-nav li .cb-mega-menu .cb-sub-menu li .cb-grandchild-menu {
     margin: 0;
@@ -6750,7 +6812,7 @@ BLOG STYLE A
   }
 
   #cb-nav-bar.cb-stuck.cb-full-width {
-    width: 100%;
+    width: calc(100% - 55px);
   }
 
   #cb-nav-bar.cb-dark-menu {
@@ -9268,6 +9330,7 @@ BLOG STYLE A
 
   #cb-nav-bar #cb-main-menu .main-nav li {
     font-size: 16px;
+    font-family
   }
   #cb-nav-bar #cb-main-menu .main-nav li > a {
     padding: 17px 15px;
@@ -9938,3 +10001,4 @@ RETINA (2x RESOLUTION DEVICES)
     display: none;
   }
 }
+

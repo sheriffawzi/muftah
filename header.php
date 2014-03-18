@@ -122,7 +122,7 @@
 
 jQuery( document ).ready(function() {
 	
-	jQuery( "ul.main-nav" ).before( "<a href='<?php echo get_bloginfo('url'); ?>'><img src='<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2014/03/Muftah-logo-45px.png' style='position:absolute;left:0px;margin:5px'></a>" );
+	jQuery( "ul.main-nav" ).before( '<a class="logo" href="<?php echo get_bloginfo("url"); ?>"><img src="<?php echo get_bloginfo("url"); ?>/wp-content/uploads/2014/03/Muftah-logo-45px.png"><span class="site-name">Muftah</span></a>' );
 });
 
 </script>
